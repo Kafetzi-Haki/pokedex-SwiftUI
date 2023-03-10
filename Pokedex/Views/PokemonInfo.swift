@@ -25,6 +25,7 @@ struct PokemonInfo: View {
                 VStack(alignment: .leading){
                     Text("Details:")
                         .font(.title2)
+                    Text("No. \(pokemon.id)")
                     HStack{
                         Text("Type(s): ")
                         VStack{
