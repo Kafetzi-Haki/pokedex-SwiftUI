@@ -18,9 +18,11 @@ struct PokemonList: View {
                 LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(pokemonData){pokemon in
                         NavigationLink {
-                            PokemonInfo()
+                            PokemonInfo(pokemon: pokemon,
+                                        typeColor: getPokemonTypeColor(type: pokemon.types[0].type.name))
                         } label: {
-                            PokemonCell(pokemon: pokemon)
+                            PokemonCell(pokemon: pokemon,
+                                        typeColor: getPokemonTypeColor(type: pokemon.types[0].type.name))
                         }
                     }
                 }
@@ -33,6 +35,27 @@ struct PokemonList: View {
                     }
                 }
             }
+        }
+    }
+    
+    func getPokemonTypeColor(type: String) -> Color {
+        switch type {
+            case "grass":
+            return Color.green
+            case "electric":
+            return Color.yellow
+            case "ground", "bug", "rock":
+            return Color.brown
+            case "water", "ice":
+            return Color.blue
+            case "normal":
+            return Color.gray
+            case "poison", "pychic", "fairy":
+            return Color.purple
+            case "fire":
+            return Color.red
+            default:
+            return Color.orange
         }
     }
 }

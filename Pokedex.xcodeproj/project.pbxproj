@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B3B06AC29BAB44900436DA4 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3B06AB29BAB44900436DA4 /* CircleImage.swift */; };
 		FABC63512954B500004B147C /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC63502954B500004B147C /* PokedexApp.swift */; };
 		FABC63532954B500004B147C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC63522954B500004B147C /* ContentView.swift */; };
 		FABC63552954B503004B147C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABC63542954B503004B147C /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B3B06AB29BAB44900436DA4 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		FABC634D2954B500004B147C /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABC63502954B500004B147C /* PokedexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexApp.swift; sourceTree = "<group>"; };
 		FABC63522954B500004B147C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				FABC63612954BA17004B147C /* PokemonImage.swift */,
 				FABC63632954DFA8004B147C /* PokemonList.swift */,
 				FABC636D2956A280004B147C /* PokemonInfo.swift */,
+				2B3B06AB29BAB44900436DA4 /* CircleImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				FABC6369295523B4004B147C /* PokemonManager.swift in Sources */,
 				FABC63622954BA17004B147C /* PokemonImage.swift in Sources */,
 				FABC63512954B500004B147C /* PokedexApp.swift in Sources */,
+				2B3B06AC29BAB44900436DA4 /* CircleImage.swift in Sources */,
 				FABC63602954B5DB004B147C /* PokemonCell.swift in Sources */,
 				FABC63642954DFA8004B147C /* PokemonList.swift in Sources */,
 				FABC636729551ED9004B147C /* Pokemon.swift in Sources */,

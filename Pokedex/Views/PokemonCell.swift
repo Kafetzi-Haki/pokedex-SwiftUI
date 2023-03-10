@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PokemonCell: View {
     var pokemon: DetailPokemon
+    var typeColor: Color
     
     var body: some View {
         ZStack {
@@ -37,38 +38,16 @@ struct PokemonCell: View {
                 .frame(alignment: .bottomTrailing)
             }
         }
-        .background(getPokemonTypeColor(type: pokemon.types[0].type.name))
+        .background(typeColor)
         .cornerRadius(12)
-        .shadow(color: getPokemonTypeColor(type: pokemon.types[0].type.name), radius: 6)
+        .shadow(color: typeColor, radius: 6)
         
         
     }
-    
-    func getPokemonTypeColor(type: String) -> Color {
-        switch type {
-            case "grass":
-            return Color.green
-            case "electric":
-            return Color.yellow
-            case "ground", "bug", "rock":
-            return Color.brown
-            case "water", "ice":
-            return Color.blue
-            case "normal":
-            return Color.gray
-            case "poison", "pychic", "fairy":
-            return Color.purple
-            case "fire":
-            return Color.red
-            default:
-            return Color.orange
-        }
-    }
-
 }
 
 struct PokemonCell_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonCell(pokemon: DetailPokemon(id: 1, name: "test", height: 4, weight: 6, types: [Types(slot: 1, type: Type(name: "electric"))]))
+        PokemonCell(pokemon: DetailPokemon(id: 1, name: "test", height: 4, weight: 6, types: [Types(slot: 1, type: Type(name: "electric"))]), typeColor: .yellow)
     }
 }
